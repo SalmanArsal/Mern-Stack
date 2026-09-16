@@ -14,17 +14,43 @@
             background-color: antiquewhite;
             text-align: center;
             width: 30rem;
+            height: 25rem;
 
         }
-        #main{
+        #main2{
             display: flex;
-            /* gap: 1rem; */
+            gap: 1rem;
             justify-content:space-evenly;
+            align-items: center;
+            /* flex-direction: column; */
+            background: red;
+            min-height: 100vh;
 
             img{
                 width: 80%;
                 height: 13rem;
             }
+        }
+
+        #main1{
+            display: grid;
+            /* grid-template-columns: auto auto; */
+            grid-template-columns:repeat(2, 1fr);
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+
+            img{
+                width: 80%;
+                height: 13rem;
+            }
+        }
+        h1{
+            text-align: center;
+        }
+
+        a:hover{
+            text-decoration: none;
         }
     </style>
     <script></script>
@@ -44,8 +70,19 @@
         mollitia labore, itaque neque quibusdam beatae harum, adipisci blanditiis, quo voluptatem molestias? Quia, illum
         praesentium. Commodi obcaecati illum eos quod quae.</p>
 
-
-    <div id="main">
+<!-- flex -->
+ <h1>Flex - One dimensional(either row or column)</h1>
+    <div id="main2">
+        <div class="section">
+            <h1>Laptop</h1>
+            <img src="./lap.jpeg" alt="">
+            <p>Laptop is an electronic gadget</p>
+        </div>
+        <div class="section">
+            <h1>Mobile</h1>
+            <img src="./mob.jpeg" alt="">
+            <p>Laptop is an electronic gadget</p>
+        </div>
         <div class="section">
             <h1>Laptop</h1>
             <img src="./lap.jpeg" alt="">
@@ -57,6 +94,76 @@
             <p>Laptop is an electronic gadget</p>
         </div>
     </div>
+
+
+<!-- Grid -->
+ <h1>GRID - 2 Dimensional(rows & cols)</h1>
+    <div id="main1">
+        <div class="section">
+            <h1>Laptop</h1>
+            <img src="./lap.jpeg" alt="">
+            <p>
+                <a href="./lap.jpeg">Laptop is an electronic gadget</a>
+            </p>
+        </div>
+        <div class="section">
+            <h1>Mobile</h1>
+            <img src="./mob.jpeg" alt="">
+            <p>
+                <a target="_blank" href="https://www.flipkart.com/iphone-bau-sale-aug26-store?param=76893&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbImlQaG9uZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D">Shop now - Mobile is an electronic gadget</a>
+            </p>
+        </div>
+        <div class="section">
+            <h1>Laptop</h1>
+            <img src="./lap.jpeg" alt="">
+            <p>Laptop is an electronic gadget</p>
+        </div>
+        <div class="section">
+            <h1>Mobile</h1>
+            <img src="./mob.jpeg" alt="">
+            <p>Laptop is an electronic gadget</p>
+        </div>
+    </div>
+
+
+<!-- Non semantic Layout -->
+    <div class="parent1">
+        <div id="nav">
+            <!-- Navbar code goes here -->
+        </div>
+        <div id="header">
+            <!-- Header code goes here -->
+        </div>
+        <div id="main">
+            <!-- Main code goes here -->
+        </div>
+        <div id="section">
+            <!-- Section code goes here -->
+        </div>
+        <div id="footer">
+            <!-- Footer code goes here -->
+        </div>
+    </div>
+
+    <!-- Semantic Layout -->
+    <div class="parent2">
+        <nav>
+            <!-- Navbar code goes here -->
+        </nav>
+        <header>
+            <!-- Header code goes here -->
+        </header>
+        <main>
+            <!-- Main code goes here -->
+        </main>
+        <section>
+            <!-- Section code goes here -->
+        </section>
+        <footer>
+            <!-- Footer code goes here -->
+        </footer>
+    </div>
+
 </body>
 
 </html>
