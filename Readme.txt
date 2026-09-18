@@ -38,3 +38,23 @@ POsition:
 Pseudo selectors:
     - classes(:) - :hover
     - elements(::) - ::placeholder
+
+
+----------------------------------------------------------------------------------
+Js Execution -
+    - Browser - use script tag in html file and provide the javascript file path
+    - Local machine -using node 
+        node -v (to check the node is existing in the machine ) , if it is throwing error then install node js and re eun the same command in terminal
+        node filename.js (to run the js file in terminal)
+Javascript:
+    keywords to create variablles - var, let, const
+        let and const will not allow redeclaration
+        const will not allow re initilaisation
+    Datatypes - 
+        primitive -
+            Number, String, Boolean, null, undefined
+        Non-primitive - 
+            Objects, Array
+    Operators - 
+        Arithmatic , Assignment, logical, Relational, ternery
+    
