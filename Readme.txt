@@ -55,6 +55,39 @@ Javascript:
             Number, String, Boolean, null, undefined
         Non-primitive - 
             Objects, Array
+                Array - Its c collection of elements
+                        An array can store n number of elements, there will be no fixed size
+                        Js array is Heterogenous, it can store different types of elements
+                        Array support indexing, to access the elements from the Array
+                        Array is mutable, it can be modified, u can add, remove, update elements in the array
+
+                Array methods -
+                        push, pop, shift, unshift, slice, splice, indexof, includes, map, filter, reduce, fill, join, ...
+
+                Object - It is collection of key value pairs, stores data about an entity
+                         Object is mutable
+                    
     Operators - 
-        Arithmatic , Assignment, logical, Relational, ternery
+        Arithmatic , Assignment, logical, Relational, ternery, unary
+
+        == -> It checks only value of the operands, it wont check datatype 
+
+    Control Statements -
+        - used to control the flow of Execution
+        - Decision making statements, looping statements
+        - Decision making statements
+            - if, else, else if ladder, nested if, switch
+            - if syntax:
+                if(condition){
+                    statement
+                }
+        - looping statements
+            - for, while, do-while, for of, for in, forEach
+            - for loop
+                for(initialisation; condition; updation){
+                    statements
+                }
+
+    
+
     
