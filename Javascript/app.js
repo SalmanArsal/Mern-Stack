@@ -149,9 +149,66 @@ for(let i = 5; i >= 1; i--){
 }
 
 console.log("-------------------------")
-for(let i = 1; i <= 5; i++){
-    if(i%2 == 1){
-        console.log("i = " + i);
-        document.getElementById("list").innerHTML += `<li>i = ${i}</li>`
-    }
+// for(let i = 1; i <= 5; i++){
+//     if(i%2 == 1){
+//         console.log("i = " + i);
+//         document.getElementById("list").innerHTML += `<li>i = ${i}</li>`
+//     }
+// }
+
+// forEach array method
+numbers.forEach(a => console.log(a+10))
+
+console.log("=====================")
+
+for(let i=0; i<numbers.length ; i++){
+    console.log(numbers[i] + 10)
 }
+
+console.log("=====================")
+
+// map()
+let another_array = numbers.map(a => {return a + 10})
+console.log(another_array)
+
+// functions
+function add(){
+    console.log(1+1)
+}
+
+add()
+
+// console.log(new Date().getFullYear())
+
+function findAge(year){
+    console.log(new Date().getFullYear() - year)
+}
+
+findAge(1995)
+findAge(1996)
+findAge(2004)
+
+function checkEligibilty(age){
+    if(age > 150){
+        return "Not Applicable"
+    }
+    return age >= 18 ? "Eligible" : "Not Eligible" ;
+}
+
+console.log(checkEligibilty(23))
+console.log(checkEligibilty(18))
+console.log(checkEligibilty(17))
+console.log(checkEligibilty(200))
+
+
+let g = function(){
+    console.log("anonymous");
+}
+g();
+
+let p = () => console.log("arrow");
+p();
+
+(function (){
+    console.log("SIF/IIF");
+})();
