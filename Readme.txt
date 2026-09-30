@@ -54,7 +54,7 @@ Javascript:
         primitive -
             Number, String, Boolean, null, undefined
         Non-primitive - 
-            Objects, Array
+            Objects, Array, Function
                 Array - Its c collection of elements
                         An array can store n number of elements, there will be no fixed size
                         Js array is Heterogenous, it can store different types of elements
@@ -62,7 +62,7 @@ Javascript:
                         Array is mutable, it can be modified, u can add, remove, update elements in the array
 
                 Array methods -
-                        push, pop, shift, unshift, slice, splice, indexof, includes, map, filter, reduce, fill, join, ...
+                        push, pop, shift, unshift, slice, splice, indexof, includes, map, filter, reduce, fill, join, forEach...
 
                 Object - It is collection of key value pairs, stores data about an entity
                          Object is mutable
@@ -88,6 +88,19 @@ Javascript:
                     statements
                 }
 
+        - forEach is an Array method, it takes a function as argument(callbackFn)
+        syntax, array.forEach(callbackFn)
+
+        - map is an array method, it takes a function as argument(callbackFn) and returns another array
+        syntax: array.map(callbackFn)
+
+Functions:
+    A set of instructions/code used to perform a specific task
     
+    types:
+        General function
+        anonymous function
+        arrow function 
+        self invoking function(IIF) , syntax: (function)()
 
     
