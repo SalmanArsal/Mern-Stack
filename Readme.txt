@@ -103,4 +103,12 @@ Functions:
         arrow function 
         self invoking function(IIF) , syntax: (function)()
 
-    
+Default parameters    
+    function name(variable1 = value, variable2=value){....}
+
+Rest parameter:
+    function name(...param){....}
+
+Callback function:
+A function passed as argument of another function:
+syntax: fun(callbackFn)
